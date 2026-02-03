@@ -1,0 +1,33 @@
+# Credentials and secrets - NEVER commit these
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+**/.env
+**/.env.local
+**/.env.production
+**/credentials.json
+**/secrets.json
+**/tokens.json
+**/*secret*
+**/*password*
+**/*token*
+**/*apikey*
+**/*api_key*
+
+# Config files with credentials
+/config/
+/.config/
+/.clawdbot/
+/.openclaw/
+
+# Logs
+*.log
+logs/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
