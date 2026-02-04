@@ -115,6 +115,7 @@ exa-plus MCP search → research-cache → impl-fridge → benches → deploymen
 | Loop execution log | `memory/loop-log-{DATE}.md` |
 | Health metrics | `memory/loop-performance.json` |
 | Open loop tracker | `memory/open_loops.md` |
+| **GitHub credentials** | **`~/.config/github/credentials.json`** |
 
 ---
 
@@ -123,6 +124,135 @@ exa-plus MCP search → research-cache → impl-fridge → benches → deploymen
 - **AI News Visual Summary**: Hourly AI News cron now generates a single visual summary image (Pollinations NanoBanana via `gen.pollinations.ai`).
 - **Script**: `/root/clawd/scripts/generate-news-visual.sh`
 - **API Key**: stored separately at `~/.clawdbot/credentials/pollinations/config.json` (referenced by scripts; do not inline).
+
+---
+
+## 🔗 GitHub Integration & Version Control
+
+### Credentials Location
+**File**: `~/.config/github/credentials.json`
+
+```json
+{
+  "repo": "username/repo-name",
+  "token": "ghp_xxxxxxxxxxxx",
+  "setup_date": "2026-02-03T16:11:47Z"
+}
+```
+
+**Usage in scripts**:
+```bash
+REPO=$(jq -r '.repo' ~/.config/github/credentials.json)
+TOKEN=$(jq -r '.token' ~/.config/github/credentials.json)
+```
+
+**Repository**: https://github.com/Techfrensbot/clawd-config (public)
+
+**Purpose**: Versioned configuration and documentation for Clawd AI assistant — **NO credentials stored**.
+
+### Repo Setup (How It Was Created)
+
+The repo was initialized **2026-02-03 at 16:11:47Z** via GitHub API/Git CLI pushes (not a local git clone). Key characteristics:
+
+| Aspect | Details |
+|--------|---------|
+| **Created** | 2026-02-03 (today) by Techfrensbot account |
+| **Commits** | 11 total, all authored by Techfrensbot |
+| **Method** | File-by-file API uploads (no local git history) |
+| **Email** | northamericaserver47@gmail.com |
+| **Branch** | `main` (default) |
+| **CI/CD** | None (no `.github/workflows/`) |
+
+**Commit History:**
+1. `Initial commit: Add README`
+2. `Add AGENTS.md - workspace documentation`
+3. `Add IDENTITY.md - owner identity and rules`
+4. `Add SOUL.md - mission and persona`
+5. `Add HEARTBEAT.md - status template`
+6. `Add exa-plus skill - neural web search`
+7. `Add mcp-search.sh - web search script`
+8. `Add moltbook-engagement.sh - disabled legacy script`
+9. `Add active-focus.md - task tracking`
+10. `Add .gitignore - exclude credentials and secrets`
+11. `Add SECURITY.md - credential safety policy`
+
+### Current Gap: Local vs Remote
+
+**⚠️ LOCAL WORKSPACE IS NOT A GIT REPO** — `/root/clawd` has no `.git/` directory.
+
+| Location | Status | Key Difference |
+|----------|--------|----------------|
+| **GitHub Remote** | 11 files, flat structure | Docs in `docs/` subdir |
+| **Local /root/clawd** | 40+ files, NOT versioned | Docs at root; more scripts/skills |
+
+**Files in Remote but NOT Local (Different Structure):**
+- `docs/AGENTS.md` (local: `/root/clawd/AGENTS.md` at root)
+- `docs/HEARTBEAT.md` (local: `/root/clawd/HEARTBEAT.md` at root)
+- `docs/IDENTITY.md` (local: `/root/clawd/IDENTITY.md` at root)
+- `docs/SOUL.md` (local: no SOUL.md at root — exists in project context)
+
+**Files in Local but NOT Remote:**
+- `scripts/ai-news-aggregator.sh` (peas cron)
+- `scripts/generate-news-visual.sh` (v3 with retries)
+- `skills/video-gen/` (new skill)
+- `skills/pollinations-flux/` (updated)
+- `skills/short-form-video-script/` (Source Context rule)
+- `skills/github-backup/`, `skills/discord-doctor/`, etc. (12 total skills locally)
+- `papers/` (1,410 paper corpus)
+- `memory/2026-02-03.md`, `memory/x-articles-drafts.md`, etc.
+
+### Version Control Policy
+
+- **ALL changes** to config files, documentation, skills, and scripts must be versioned
+- Commit messages should describe the change purpose
+- Use branches for experimental changes, merge via PR for review
+
+**What's Versioned:**
+- Documentation (`.md` files)
+- Skill definitions and scripts (credential-free, references external creds)
+- Memory templates and examples
+- Scripts (read credentials from `~/.config/`, never hardcoded)
+
+**What's NOT Versioned (Security):**
+- `~/.config/*credentials.json`
+- `~/.clawdbot/credentials/`
+- `~/.openclaw/openclaw.json` (contains tokens)
+- Any file with API keys, tokens, or secrets
+
+**Security Files in Repo:**
+- `.gitignore` — excludes credentials, secrets, `.env*`, `credentials.json`, etc.
+- `SECURITY.md` — documents no-credential policy and verification steps
+
+### Adding Files to Repo
+
+**Option 1: GitHub API (current method)**
+```bash
+# Read file and encode
+CONTENT=$(base64 -w 0 /root/clawd/AGENTS.md)
+
+# Upload via API
+curl -X PUT https://api.github.com/repos/Techfrensbot/clawd-config/contents/docs/AGENTS.md \
+  -H "Authorization: token $(jq -r '.token' ~/.config/github/credentials.json)" \
+  -H "Accept: application/vnd.github.v3+json" \
+  -d "{\"message\":\"Update AGENTS.md with git findings\",\"content\":\"$CONTENT\",\"sha\":\"$(curl -s https://api.github.com/repos/Techfrensbot/clawd-config/contents/docs/AGENTS.md | jq -r '.sha')\"}"
+```
+
+**Option 2: Initialize Local Git (recommended for ongoing)**
+```bash
+cd /root/clawd
+git init
+git remote add origin https://github.com/Techfrensbot/clawd-config.git
+git fetch origin
+# Resolve structure differences (docs/ vs root), then:
+git add .
+git commit -m "Sync local workspace with remote"
+git push -u origin main
+```
+
+**⚠️ Structure Decision Needed:**
+- Remote uses `docs/` subdirectory for `.md` files
+- Local has docs at root
+- Choose one pattern before syncing to avoid duplication
 
 ---
 
