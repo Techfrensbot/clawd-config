@@ -116,6 +116,7 @@ exa-plus MCP search → research-cache → impl-fridge → benches → deploymen
 | Health metrics | `memory/loop-performance.json` |
 | Open loop tracker | `memory/open_loops.md` |
 | **GitHub credentials** | **`~/.config/github/credentials.json`** |
+| **GitHub POC deployment** | **`GITHUB_POC_DEPLOYMENT.md`** |
 
 ---
 
