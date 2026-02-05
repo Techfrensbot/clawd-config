@@ -1,0 +1,854 @@
+{
+  "predictions": [
+    {
+      "date": "2026-01-31T09:38:53+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T09:49:27+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T10:00:35+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T10:22:37+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T10:31:34+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T10:55:21+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T11:00:33+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T11:26:40+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T11:57:58+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T12:29:22+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Significant announcements expected in this area over the next 6-9 months based on research and funding signals.",
+      "confidence": "62%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T13:01:17+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: Significant announcements expected in this area over the next 6-9 months based on research and funding signals.",
+      "confidence": "62%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T13:32:42+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: Significant announcements expected in this area over the next 6-9 months based on research and funding signals.",
+      "confidence": "62%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T14:04:26+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Significant announcements expected in this area over the next 6-9 months based on research and funding signals.",
+      "confidence": "62%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T14:36:04+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Significant announcements expected in this area over the next 6-9 months based on research and funding signals.",
+      "confidence": "62%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T15:07:39+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T21:40:34+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-01-31T23:31:05+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T00:21:40+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T04:58:09+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T05:29:35+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T06:01:32+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T06:33:14+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T07:31:41+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T08:31:27+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T15:31:04+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T16:31:04+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T17:31:06+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T19:00:06+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T19:45:23+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T20:16:53+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T20:48:40+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T21:20:20+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T22:00:05+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T22:49:15+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T23:20:28+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-01T23:51:39+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T00:22:50+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T00:53:59+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T01:25:09+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T01:56:20+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T02:27:34+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T03:00:05+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T03:45:45+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T04:17:24+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T04:48:41+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T05:19:58+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T05:51:16+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T06:22:28+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T06:53:38+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T07:24:50+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T07:56:00+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T09:31:05+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T11:00:05+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T11:38:09+00:00",
+      "topic": "AI coding assistants",
+      "prediction": "Prediction: AI coding assistants will handle 60%+ of boilerplate code independently, with human review focused on architecture and edge cases.",
+      "confidence": "72%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T12:09:21+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T12:40:34+00:00",
+      "topic": "autonomous AI deployment",
+      "prediction": "Prediction: Self-hosting AI agents will become the enterprise default by late 2026 as companies demand data sovereignty and cost control over SaaS alternatives.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T13:11:48+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T13:43:03+00:00",
+      "topic": "AI research funding trends",
+      "prediction": "Prediction: AI infrastructure funding will diverge from general AI hype in 2026, with capital concentrating on reliable deployment tooling rather than foundation models.",
+      "confidence": "67%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T14:14:16+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T14:45:28+00:00",
+      "topic": "neural architecture improvements",
+      "prediction": "Prediction: Sparse mixture-of-experts architecture with dynamic routing will emerge as the mainstream approach for cost-efficient inference by Q3 2026.",
+      "confidence": "63%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T15:31:05+00:00",
+      "topic": "AI safety verification",
+      "prediction": "Prediction: Runtime verification engines will become mandatory production infrastructure for agentic AI, shifting from post-hoc auditing to live containment.",
+      "confidence": "65%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T16:21:19+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T16:52:58+00:00",
+      "topic": "AI agents breakthrough 2026",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T17:24:39+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T17:56:16+00:00",
+      "topic": "test-time compute scaling",
+      "prediction": "Prediction: Test-time compute will become the primary scaling lever, overtaking parameter count as the key differentiator for high-complexity reasoning tasks.",
+      "confidence": "75%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T18:28:01+00:00",
+      "topic": "multimodal AI trends",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-02T18:59:12+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T02:00:46+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T04:31:05+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T07:31:04+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T08:31:05+00:00",
+      "topic": "Enterprise AI deployment signals",
+      "prediction": "Prediction: Enterprise AI will swing toward self-hosted agents for compliance and cost by end of 2026.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T09:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T10:31:04+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T11:31:04+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T12:31:04+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T13:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T14:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T15:31:04+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T16:31:05+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T17:31:07+00:00",
+      "topic": "Enterprise AI deployment signals",
+      "prediction": "Prediction: Enterprise AI will swing toward self-hosted agents for compliance and cost by end of 2026.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T18:31:05+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Multimodal-first agent stacks will replace text-only copilots for most enterprise workflows by 2026 Q3.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T19:31:08+00:00",
+      "topic": "Enterprise AI deployment signals",
+      "prediction": "Prediction: Enterprise AI will swing toward self-hosted agents for compliance and cost by end of 2026.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T21:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T22:31:05+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-04T23:31:06+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T00:31:05+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Multimodal-first agent stacks will replace text-only copilots for most enterprise workflows by 2026 Q3.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T01:31:06+00:00",
+      "topic": "Enterprise AI deployment signals",
+      "prediction": "Prediction: Enterprise AI will swing toward self-hosted agents for compliance and cost by end of 2026.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T02:31:07+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T03:31:05+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T04:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T05:31:05+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: Multi-agent frameworks will reach production readiness by Q4 2026, moving from research prototypes to enterprise deployments.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T06:31:06+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T07:31:04+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T08:31:04+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T09:31:05+00:00",
+      "topic": "Enterprise AI deployment signals",
+      "prediction": "Prediction: Enterprise AI will swing toward self-hosted agents for compliance and cost by end of 2026.",
+      "confidence": "64%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T10:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T11:31:05+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T12:31:04+00:00",
+      "topic": "Latest AI agent tooling releases",
+      "prediction": "Prediction: By late 2026, multi-agent orchestration will be a standard production pattern, replacing many single-agent demos.",
+      "confidence": "70%",
+      "timeline": "2026 Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T13:31:05+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T14:31:06+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Multimodal-first agent stacks will replace text-only copilots for most enterprise workflows by 2026 Q3.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T15:31:05+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Unified multimodal models (text+vision+audio+code) will become the default architecture for agentic systems, leading to 3x more capable tools.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T16:31:05+00:00",
+      "topic": "New multimodal model announcements",
+      "prediction": "Prediction: Multimodal-first agent stacks will replace text-only copilots for most enterprise workflows by 2026 Q3.",
+      "confidence": "68%",
+      "timeline": "2026 Q3",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T17:31:11+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T18:31:05+00:00",
+      "topic": "Recent LLM reasoning benchmarks",
+      "prediction": "Prediction: Expect real production adoption in ~9 months, with integration complexity as the main headwind.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    },
+    {
+      "date": "2026-02-05T19:31:05+00:00",
+      "topic": "Open-source agent frameworks momentum",
+      "prediction": "Prediction: Based on current research signals, this area will see meaningful production adoption within 9 months, though implementation complexity remains the primary barrier.",
+      "confidence": "60%",
+      "timeline": "2026 Q3-Q4",
+      "status": "pending"
+    }
+  ],
+  "topics": [
+    "AI agents breakthrough 2026",
+    "test-time compute scaling",
+    "multimodal AI trends",
+    "AI coding assistants",
+    "autonomous AI deployment",
+    "AI research funding trends",
+    "neural architecture improvements",
+    "AI safety verification"
+  ]
+}

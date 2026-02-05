@@ -1,0 +1,271 @@
+id: vps-multi-agent-deployments
+title: VPS Multi-Agent Deployment Combinations
+category: infrastructure
+status: active
+tags:
+  - vps
+  - deployment
+  - openclaw
+  - nanobot
+  - memu
+  - architecture
+created: "2026-02-03"
+updated: "2026-02-03"
+content: |
+  # VPS Multi-Agent Deployment Combinations
+
+  ## Overview
+  Three deployment patterns for running AI agents on a VPS environment.
+
+  ## Option 1: MemU + OpenClaw (Recommended for VPS)
+  
+  **Architecture:**
+  ```
+  ┌─────────────────────────────────────────┐
+  │  VPS (Ubuntu/Debian)                    │
+  │                                         │
+  │  ┌──────────────┐    ┌──────────────┐  │
+  │  │   OpenClaw   │◄──►│    MemU      │  │
+  │  │   Gateway    │    │  (Memory)    │  │
+  │  └──────────────┘    └──────────────┘  │
+  │         │                    │          │
+  │         └────────────────────┘          │
+  │              Shared Memory Store        │
+  └─────────────────────────────────────────┘
+  ```
+
+  **Setup:**
+  ```bash
+  # 1. Install OpenClaw (existing)
+  npm install -g openclaw
+
+  # 2. Install MemU
+  git clone https://github.com/NevaMind-AI/MemU.git
+  cd MemU
+  pip install -e .
+
+  # 3. Configure MemU to use OpenClaw's memory directory
+  # ~/.memu/config.json
+  {
+    "memory_root": "/root/clawd/memory/memu",
+    "openclaw_integration": {
+      "enabled": true,
+      "memory_path": "/root/clawd/memory",
+      "session_sync": true
+    }
+  }
+
+  # 4. Start MemU daemon
+  memu daemon --port 8080
+
+  # 5. Configure OpenClaw to check MemU before LLM calls
+  # Add to /root/.openclaw/openclaw.json
+  {
+    "agents": {
+      "defaults": {
+        "preProcess": "memu check-intent",
+        "postProcess": "memu store"
+      }
+    }
+  }
+  ```
+
+  **How it works:**
+  - Every user message first hits MemU for intent analysis
+  - MemU checks if this pattern exists in memory
+  - If yes: return cached insight (zero LLM tokens)
+  - If no: pass to OpenClaw, store result in MemU for next time
+
+  ---
+
+  ## Option 2: NanoBot + MemU (Lightweight VPS)
+
+  **Architecture:**
+  ```
+  ┌─────────────────────────────────────────┐
+  │  VPS (Low resource: 1-2 CPU, 2GB RAM)   │
+  │                                         │
+  │  ┌──────────────┐    ┌──────────────┐  │
+  │  │   NanoBot    │◄──►│    MemU      │  │
+  │  │   (Python)   │    │  (Python)    │  │
+  │  └──────────────┘    └──────────────┘  │
+  │         │                    │          │
+  │         └────────────────────┘          │
+  │              SQLite/JSON Store          │
+  └─────────────────────────────────────────┘
+  ```
+
+  **Setup:**
+  ```bash
+  # 1. Install NanoBot
+  pip install nanobot-ai
+
+  # 2. Install MemU
+  pip install memu-ai  # (if published) or from source
+
+  # 3. Configure NanoBot with MemU wrapper
+  # ~/.nanobot/config.json
+  {
+    "providers": {
+      "openrouter": {
+        "apiKey": "sk-or-v1-xxx"
+      }
+    },
+    "middleware": {
+      "pre_llm": "memu.recall",
+      "post_llm": "memu.store",
+      "proactive": true
+    }
+  }
+
+  # 4. Start NanoBot with MemU memory layer
+  nanobot agent --memory-backend memu --proactive
+
+  # 5. Add Telegram/WhatsApp (optional)
+  nanobot telegram --token YOUR_BOT_TOKEN
+  ```
+
+  **How it works:**
+  - NanoBot handles all queries
+  - MemU intercepts before/after LLM calls
+  - Proactive mode: MemU watches patterns, suggests actions
+  - Much lighter than OpenClaw (good for cheap VPS)
+
+  ---
+
+  ## Option 3: All Three (Tiered Architecture)
+
+  **Architecture:**
+  ```
+  ┌─────────────────────────────────────────┐
+  │  VPS (Higher resource: 4+ CPU, 8GB RAM) │
+  │                                         │
+  │  ┌──────────────────────────────────┐   │
+  │  │         Load Balancer            │   │
+  │  │      (Nginx or simple proxy)     │   │
+  │  └──────────────────────────────────┘   │
+  │              │                          │
+  │    ┌─────────┼─────────┐                │
+  │    ▼         ▼         ▼                │
+  │ ┌──────┐ ┌──────┐ ┌──────────┐         │
+  │ │MemU  │ │NanoBo│ │ OpenClaw │         │
+  │ │Router│ │t     │ │ Gateway  │         │
+  │ └──────┘ └──────┘ └──────────┘         │
+  │     │        │          │               │
+  │     └────────┴──────────┘               │
+  │           Shared Memory                 │
+  │         (/opt/agent-memory)             │
+  └─────────────────────────────────────────┘
+  ```
+
+  **Setup:**
+  ```bash
+  # 1. Create shared directories
+  mkdir -p /opt/agent-memory/{memu,nanobot,openclaw}
+  mkdir -p /opt/agent-logs
+
+  # 2. Install all three
+  pip install nanobot-ai memu-ai  # MemU + NanoBot
+  npm install -g openclaw         # OpenClaw
+
+  # 3. MemU Router Configuration
+  # /opt/memu-router/config.yaml
+  routers:
+    - pattern: "quick|simple|status|check"
+      target: "nanobot"
+      description: "Fast path for simple queries"
+      
+    - pattern: "research|complex|multi|cron"
+      target: "openclaw"
+      description: "Heavy lifter for complex tasks"
+      
+    - pattern: "remember|recall|what did|last time"
+      target: "memu"
+      description: "Direct memory queries"
+
+  # 4. NanoBot with shared memory
+  # ~/.nanobot/config.json
+  {
+    "memory": {
+      "type": "shared",
+      "path": "/opt/agent-memory/nanobot"
+    },
+    "auto_offload": {
+      "enabled": true,
+      "threshold_tokens": 2000,
+      "offload_to": "openclaw"
+    }
+  }
+
+  # 5. OpenClaw with tier integration
+  # ~/.openclaw/openclaw.json additions
+  {
+    "agents": {
+      "defaults": {
+        "cliBackends": {
+          "nanobot": {
+            "command": "nanobot",
+            "args": ["agent", "-m"],
+            "output": "text"
+          }
+        }
+      }
+    }
+  }
+
+  # 6. Start services
+  systemctl start memu-router    # Routes queries to right agent
+  systemctl start nanobot        # Fast path daemon
+  systemctl start openclaw       # Heavy lifter
+
+  # 7. Discord bot points to MemU router
+  # Discord message → MemU → Route → Response
+  ```
+
+  ---
+
+  ## Comparison Table
+
+  | Setup | RAM | CPU | Best For | Complexity |
+  |-------|-----|-----|----------|------------|
+  | **MemU + OpenClaw** | 4GB | 2+ cores | Production, multi-user | Medium |
+  | **NanoBot + MemU** | 2GB | 1-2 cores | Personal, cost-conscious | Low |
+  | **All Three** | 8GB | 4+ cores | Power user, research | High |
+
+  ---
+
+  ## Recommendation
+
+  Since OpenClaw is already running:
+
+  **Start with Option 1 (MemU + OpenClaw):**
+  1. MemU adds proactive memory without replacing anything
+  2. Can reduce LLM token costs by 30-50%
+  3. If NanoBot is needed later, add it as a subagent
+
+  ---
+
+  ## Integration Patterns
+
+  **Handoff Logic:**
+  | Trigger | Handler | Why |
+  |---------|---------|-----|
+  | Simple query + no context needed | NanoBot | Speed |
+  | Complex query + tools needed | OpenClaw | Capability |
+  | Repeated pattern | MemU cache | Cost |
+  | New pattern detected | MemU → OpenClaw | Learning |
+
+  **Tiered Flow:**
+  ```
+  User Input → MemU (intent analysis) → Route to appropriate agent
+                   ↓
+      "Is this a quick query?" → NanoBot
+      "Is this complex/multi-step?" → OpenClaw
+      "Have I seen this pattern before?" → Recall from memory, skip LLM call
+  ```
+
+  ---
+
+  ## Source
+  Generated by frenbot on 2026-02-03 for Tech Friend AJ (@techfren)
+  Context: Discussion with EyeSeeThru about multi-agent VPS deployments

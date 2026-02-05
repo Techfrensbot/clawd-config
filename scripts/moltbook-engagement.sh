@@ -2,8 +2,8 @@
 # Moltbook Engagement Loop - Predictions Edition
 # Posts research-backed predictions using exa-plus + news loops
 
-echo "[moltbook-engagement] disabled (agentic cron now handles posting)"
-exit 0
+# echo "[moltbook-engagement] disabled (agentic cron now handles posting)"
+# exit 0  # Re-enabled - removed early exit
 
 set -e
 

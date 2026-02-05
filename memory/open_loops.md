@@ -22,8 +22,6 @@ A structured system for tracking unresolved tasks/requests.
 
 | # | Title | Owner | Status | Priority | Last Updated | Cadence |
 |---|-------|-------|--------|----------|--------------|---------|
-| 4 | Sequential thinking strategy ranking | 👑 | 🟢 In Progress | 🟢 P2 | 2026-01-30 | Every 15-min loop |
-| 3 | Paper analyzer integration | 👑 + memgrafter | ⏸️ Pending approval | 🟡 P1 | 2026-01-26 | Every 2 days |
 
 ## Recently Closed
 
@@ -32,6 +30,8 @@ A structured system for tracking unresolved tasks/requests.
 | 5 | Build open loop tracker | 👑 | 2026-01-29 | System built with cron alerts + commands |
 | 2 | Video topic idea/day loop | 👑 | 2026-01-29 | Deferred - format unclear |
 | 4 | Codex/Claude account incident clarity | 👑 | 2026-01-29 | No action needed - context preserved |
+| 3 | Paper analyzer integration | 👑 + memgrafter | 2026-02-05 | Canceled per memgrafter |
+| 4 | Sequential thinking strategy ranking | 👑 | 2026-02-05 | Canceled per memgrafter |
 
 | # | Title | Owner | Closed Date | Resolution |
 |---|-------|-------|-------------|------------|

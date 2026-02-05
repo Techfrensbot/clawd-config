@@ -1,33 +1,25 @@
-# Credentials and secrets - NEVER commit these
-**/*.key
-**/*.pem
-**/*.p12
-**/*.pfx
+# Credentials - NEVER commit
+**/credentials*
+**/tokens*
+**/api_keys*
 **/.env
-**/.env.local
-**/.env.production
-**/credentials.json
-**/secrets.json
-**/tokens.json
-**/*secret*
-**/*password*
-**/*token*
-**/*apikey*
-**/*api_key*
+**/secrets*
 
-# Config files with credentials
-/config/
-/.config/
-/.clawdbot/
-/.openclaw/
-
-# Logs
+# Runtime files
 *.log
-logs/
+*.pid
+*.sock
+
+# Large files
+*.mp4
+*.mp3
+*.wav
+*.zip
+*.tar.gz
 
 # Node modules
 node_modules/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Temp files
+*.tmp
+.cache/

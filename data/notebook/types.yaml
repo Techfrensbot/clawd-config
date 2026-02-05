@@ -1,0 +1,26 @@
+types:
+  deployment:
+    fields:
+      - name: title
+        type: text
+        required: true
+      - name: category
+        type: select
+        options:
+          - infrastructure
+          - architecture
+          - guide
+      - name: status
+        type: select
+        options:
+          - draft
+          - active
+          - archived
+      - name: tags
+        type: list
+      - name: content
+        type: longtext
+      - name: created
+        type: date
+      - name: updated
+        type: date
